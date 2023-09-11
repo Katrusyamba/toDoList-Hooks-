@@ -1,74 +1,12 @@
+ToDo-приложение, позволяющее управлять текущим списком дел
+Что должно быть в интерфейсе:
+Поле для ввода новой задачи
+Списки всех задач, невыполненных и выполненных задач (по отдельности)
+ 
+Требования к коду:
+Приложение создано с использованием TypeScript, React и React Hooks
+Библиотеки компонент – на ваше усмотрение
+Ключевая на ваш взгляд функциональность обязательно покрыта тестами
+Проект должен запускаться командой npm i && npm run start
+Проект доступен на GitHub Pages/Vercel/etc.
 
-
-## React + Typescript + ESLint + Prettier
-
-Современный быстрый сборщик React проекта на Typescript с предустановленными настройками ESLint и Prettier 
-
-## Использование
-
-```
-
-cd client
-
-npm i
-```
-
-## Скрипты
-
-- Запустить в режиме разработки
-
-```
-npm run dev
-```
-
-- Собрать проект
-
-```
-npm run build
-```
-
-- Превью
-
-```
-npm run preview
-```
-
-## `settings.json`
-
-Чтобы настроить форматирование и линтование по сохранению, необходимо прописать в `settings.json` (ctrl + shift + P) следующие настройки:
-
-```json
-{
-  "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true
-  },
-  "editor.formatOnSave": true,
-  "editor.defaultFormatter": "esbenp.prettier-vscode"
-}
-```
-
-Можно добавить форматирование Prettier для JS и React:
-
-```json
-{
-  "[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[javascriptreact]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  }
-}
-```
-
-При работе не из корневой директории необходимо настроить CWD для ESLint:
-
-```json
-{
-  "eslint.workingDirectories": [
-    { "directory": "./client", "changeProcessCWD": true },
-    { "directory": "./server", "changeProcessCWD": true }
-  ]
-}
-```
-
-Если директория не `client` или `server`, то можно добавить соответствующую строчку в данный массив.
